@@ -1,0 +1,47 @@
+@media (max-width: 767px) {
+  .container {
+    width: 60%;
+  }
+  .icons {
+    padding: 4px;
+  }
+
+  .icons .logo img {
+    width: 25px;
+  }
+
+  .icons .logo {
+    width: 22px;
+    height: 22px;
+  }
+
+  .icons .toggle i {
+    width: 25px;
+    font-size: 20px !important;
+  }
+
+  .icons .foot i {
+    font-size: 10px;
+  }
+  .sideBar .links ul li {
+    padding: 10px;
+  }
+  .sideBar .links ul li a {
+    font-size: 16px;
+  }
+
+  .sideBar .links .footer {
+    font-size: 16px;
+  }
+  .sideBar .links {
+    width: 100px;
+  }
+
+  .Search .searchInp {
+    flex-direction: column;
+  }
+
+  .Search .searchInp input {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,243 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #040d12;
+}
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px;
+}
+
+.home {
+  z-index: 99;
+  position: relative;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+
+#loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgb(15, 14, 24);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBar {
+  position: fixed;
+  top: 0px;
+  left: -200px;
+  bottom: 0px;
+  display: flex;
+  z-index: 999;
+}
+
+.sideBar .links {
+  padding: 20px;
+  background-color: #040d12;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.sideBar .links .footer {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+  background-image: linear-gradient(#092635, #1b4242, #5c8374);
+  text-align: center;
+}
+
+.icons .toggle i {
+  cursor: pointer;
+  color: #091820;
+}
+
+.icons img {
+  width: 40px;
+}
+
+.icons .logo {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 2px #5c8374;
+  margin-top: 10px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons .foot {
+  margin-bottom: 10px;
+}
+.icons .foot i {
+  color: #091820;
+}
+.sideBar .links ul {
+  list-style: none;
+  padding: 0px !important;
+  overflow: hidden;
+  height: 240px;
+}
+
+.sideBar .links ul li {
+  padding: 10px;
+  margin-top: 300px;
+}
+.sideBar .links ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}
+
+.container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.container .cards .card {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .cards .card img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.container .cards .card .overLay {
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.747);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+  flex-direction: column;
+}
+
+.container .cards .card .overLay h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.container .cards .card .overLay p {
+  font-size: 14px;
+  color: #040d12;
+  text-align: center;
+}
+
+.container .cards .card:hover .overLay {
+  top: 0px;
+}
+
+.container .cards .card:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.Search {
+  position: relative;
+  inset: 0px;
+  z-index: 99;
+}
+
+.searchInp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.searchInp input {
+  flex-basis: calc((100% - 30px) / 2);
+  padding: 10px;
+  border: 2px solid #1b4242;
+  background-color: transparent;
+  border-radius: 6px;
+  color: white;
+}
+
+.searchInp input:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px 3px #1b4242;
+}
+
+.Search .cards {
+  margin-top: 50px;
+}
+.contact,
+.Area,
+.Categories,
+.ingredients {
+  position: relative;
+  inset: 0px;
+  z-index: 99;
+}
+
+.cards .card i {
+  font-size: 80px;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+}
+.Area .cards .card,
+.ingredients .cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1b4242;
+}
+.Area .cards .card h3,
+.ingredients .cards .card h3 {
+  color: white;
+}
+.Area .cards .card p,
+.ingredients .cards .card p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.contact .container > h2 {
+  font-size: 80px;
+  color: white;
+  margin: 50px auto;
+  text-align: center;
+}

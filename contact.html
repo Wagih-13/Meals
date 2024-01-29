@@ -1,0 +1,161 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/pngegg.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/indexStyle.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>meals</title>
+  </head>
+  <body>
+    <div class="sideBar">
+      <div class="links">
+        <ul id="toUp">
+          <li><a href="search.html">Search</a></li>
+          <li><a href="categories.html">Caregories</a></li>
+          <li><a href="Ingredients.html">Ingredients</a></li>
+          <li><a href="area.html">Area</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <div class="footer">
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+          <span><i class="fa-solid fa-globe"></i></span>
+          <p>Copyright Â© 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/pngegg.png" alt="" />
+          </a>
+        </div>
+        <div class="toggle">
+          <i
+            class="fa-solid open-close-icon fa-2x fa-align-justify"
+            id="open"
+          ></i>
+          <i class="fa-solid open-close-icon fa-2x fa-x d-none" id="close"></i>
+        </div>
+        <div class="foot">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="container w-75 text-center">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <input
+                  id="name"
+                  onkeyup="inputsValidation()"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Name"
+                />
+                <div
+                  id="nameAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  <p>Special characters and numbers not allowed</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="email"
+                  onkeyup="inputsValidation()"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter Your Email"
+                />
+                <div
+                  id="emailAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  <p>Email not valid *exemple@yyy.zzz</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="phone"
+                  onkeyup="inputsValidation()"
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter Your Phone"
+                />
+                <div
+                  id="phoneAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  <p>Enter valid Phone Number</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="age"
+                  onkeyup="inputsValidation()"
+                  type="number"
+                  class="form-control"
+                  placeholder="Enter Your Age"
+                />
+                <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  <p>Enter valid age</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="password"
+                  onkeyup="inputsValidation()"
+                  type="password"
+                  class="form-control"
+                  placeholder="Enter Your Password"
+                />
+                <div
+                  id="passwordAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  <p>
+                    Enter valid password *Minimum eight characters, at least one
+                    letter and one number:*
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input
+                  id="retypePassword"
+                  onkeyup="inputsValidation()"
+                  type="password"
+                  class="form-control"
+                  placeholder="Retype your password"
+                />
+                <div
+                  id="retypePasswordAlert"
+                  class="alert alert-danger w-100 mt-2 d-none"
+                >
+                  <p>Enter valid repassword</p>
+                </div>
+              </div>
+            </div>
+            <button id="submitBtn" disabled class="btn btn-danger m-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas class="background"></canvas>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/indexScript.js"></script>
+    <script src="js/particles.js"></script>
+  </body>
+</html>
