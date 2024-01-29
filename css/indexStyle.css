@@ -48,7 +48,6 @@ body {
   position: fixed;
   top: 0px;
   left: -200px;
-  bottom: 0px;
   display: flex;
   z-index: 999;
   height: 100vh;
