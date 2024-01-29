@@ -44,4 +44,9 @@
   .Search .searchInp input {
     flex-basis: 100%;
   }
+
+  .contact .container > h2 {
+    font-size: 40px;
+    margin: 25px auto;
+  }
 }
