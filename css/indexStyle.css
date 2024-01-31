@@ -35,8 +35,7 @@ body {
   position: fixed;
   top: 0px;
   left: 0px;
-  bottom: 0px;
-  right: 0px;
+  height: 105vh;
   background-color: #040d12;
   z-index: 9999;
   display: flex;
@@ -241,4 +240,3 @@ body {
   margin: 50px auto;
   text-align: center;
 }
-
