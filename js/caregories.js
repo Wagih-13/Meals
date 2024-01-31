@@ -11,7 +11,7 @@ async function getCategories() {
 function disblayMeals(mealsData) {
   let htmlBlock = ``;
   for (let i = 0; i < mealsData.categories.length; i++) {
-    htmlBlock += `<div class="card" onclick="test(${i})">
+    htmlBlock += `<div class="card" onclick="mealsByCategories(${i})">
     <img src="${mealsData.categories[i].strCategoryThumb}" alt="">
     <div class="overLay"><h3>${mealsData.categories[i].strCategory}</h3>
     <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consectetur
@@ -24,18 +24,8 @@ function disblayMeals(mealsData) {
 
 getCategories();
 
-function test(x) {
-  $("#loading").fadeIn(0);
-
-  $(".sideBar").animate({ left: `-${sideBarWidth}px` });
-  $("#close").addClass("d-none");
-  $("#open").removeClass("d-none");
-
-  setTimeout(() => {
-    $(document).ready(() => {
-      $("#loading").fadeOut(1500);
-    });
-  }, 2500);
+function mealsByCategories(x) {
+  loding();
   async function getCategories2() {
     let res = await fetch(
       `https://www.themealdb.com/api/json/v1/1/filter.php?c=${trt[x]}`
@@ -47,7 +37,7 @@ function test(x) {
   function disblayMealsByCat(mealsDat) {
     let htmlBlock = ``;
     for (let i = 0; i < mealsDat.meals.length; i++) {
-      htmlBlock += `<div class="card" ">
+      htmlBlock += `<div class="card" onclick="mealsDitails( ${mealsDat.meals[i].idMeal}) ">
       <img src="${mealsDat.meals[i].strMealThumb}" alt="">
       <div class="overLay"><h3>${mealsDat.meals[i].strMeal}</h3>
       </div></div>`;
