@@ -58,7 +58,7 @@ function mealsDitails(x) {
   function disblayMealDitails(mealsData) {
     document.querySelector(
       " .container "
-    ).innerHTML = ` <div class="row py-5 g-4" id="rowData colorCs">
+    ).innerHTML = ` <div class="row  g-4" id="rowData ">
     <div class="col-md-4">
       <img
         class="w-100 rounded-3"
