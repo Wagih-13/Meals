@@ -10,7 +10,7 @@ function disblayMeals(mealsData) {
   let htmlBlock = ``;
 
   for (let i = 0; i < mealsData.meals.length; i++) {
-    htmlBlock += `    <div class="card" onclick="mealsDitails(${mealsData.meals[i].idMeal})">
+    htmlBlock += `    <div class="card" ondblclick="mealsDitails(${mealsData.meals[i].idMeal})">
       <img src="${mealsData.meals[i].strMealThumb}" alt="">
       <div class="overLay"><h3>${mealsData.meals[i].strMeal}</h3></div>
       </div>`;
