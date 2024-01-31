@@ -10,7 +10,7 @@ $("#byName").keyup(() => {
 
     for (let i = 0; i < mealsData.meals.length; i++) {
       if (mealsData.meals[i].strMeal.includes(inpVal)) {
-        htmlBlock += `    <div class="card">
+        htmlBlock += `    <div class="card"  onclick="mealsDitails( ${mealsData.meals[i].idMeal}) ">
           <img src="${mealsData.meals[i].strMealThumb}" alt="">
           <div class="overLay"><h3>${mealsData.meals[i].strMeal}</h3></div>
           </div>`;
@@ -32,12 +32,13 @@ $("#byFirstLetter").keyup(() => {
     let mealsData = await resp.json();
 
     for (let i = 0; i < mealsData.meals.length; i++) {
-      htmlBlock += `    <div class="card">
+      htmlBlock += `    <div class="card"  onclick="mealsDitails( ${mealsData.meals[i].idMeal}) ">
         <img src="${mealsData.meals[i].strMealThumb}" alt="">
         <div class="overLay"><h3>${mealsData.meals[i].strMeal}</h3></div>
         </div>`;
     }
     document.querySelector(".Search .cards").innerHTML = htmlBlock;
+    return mealsData;
   }
   getMealsByFirstLetter();
 });

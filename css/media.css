@@ -49,4 +49,11 @@
     font-size: 40px;
     margin: 25px auto;
   }
+
+  .container .cards .card .overLay {
+    top: 70%;
+  }
+  .container .cards .card:hover .overLay {
+    top: 70%;
+  }
 }
