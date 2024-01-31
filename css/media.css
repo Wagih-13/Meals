@@ -34,7 +34,8 @@
     font-size: 16px;
   }
   .sideBar .links {
-    width: 100px;
+    width: 110px;
+    padding: 20px 10px 20px 10px;
   }
 
   .Search .searchInp {
@@ -51,9 +52,12 @@
   }
 
   .container .cards .card .overLay {
-    top: 70%;
+    top: 60%;
   }
   .container .cards .card:hover .overLay {
-    top: 70%;
+    top: 60%;
+  }
+  .container .cards .card .overLay h3 {
+    font-size: 22px;
   }
 }

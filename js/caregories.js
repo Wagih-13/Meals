@@ -14,8 +14,7 @@ function disblayMeals(mealsData) {
     htmlBlock += `<div class="card" onclick="mealsByCategories(${i})">
     <img src="${mealsData.categories[i].strCategoryThumb}" alt="">
     <div class="overLay"><h3>${mealsData.categories[i].strCategory}</h3>
-    <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est consectetur
-    nemo incidunt, nobis minus fugit ratione maxime vel molestias! Iusto!</p></div>
+    </div>
     </div>`;
     trt.push(mealsData.categories[i].strCategory);
   }
